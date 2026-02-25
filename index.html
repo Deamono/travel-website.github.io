@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dattaguru Tours & Travel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Dattaguru<span>Tours&Travel</span></div>
+
+       <nav id="nav-links">
+           <a href="#fleet">Services</a>
+           <a href="https://wa.me/7341182246?text=Hello%20I%20want%20to%20book%20a%20vehicle" target="_blank">Contact</a>
+       </nav>
+
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero fade-in">
+        <div class="hero-text">
+            <h1>Discover Your Next Adventure</h1>
+            <p>Explore the world’s most beautiful destinations with us.</p>
+            <button onclick="showContact()">Contact Us</button>
+        </div>
+    </section>
+
+<!-- Rental Fleet Section -->
+<!-- Rental Fleet Section -->
+<section id="fleet" class="places fade-in">
+    <h2>Our Premium Rental Fleet</h2>
+    <p class="subtitle">Luxury • Comfort • Reliability</p>
+
+    <div class="fleet-grid">
+
+        <div class="fleet-card">
+            <img src="car1.jpg" alt="Ertiga">
+            <h3>Maruti Suzuki Ertiga</h3>
+            <p>7 Seater | Family Trips</p>
+        </div>
+
+        <div class="fleet-card">
+            <img src="car2.jpg" alt="Ertiga Event">
+            <h3>Ertiga (Special Occasion)</h3>
+            <p>Perfect for Events</p>
+        </div>
+
+        <div class="fleet-card">
+            <img src="car3.jpg" alt="Traveller">
+            <h3>Force Traveller</h3>
+            <p>Best for Group Travel</p>
+        </div>
+
+        <div class="fleet-card">
+            <img src="car4.jpg" alt="Innova">
+            <h3>Toyota Innova Crysta</h3>
+            <p>Premium Corporate Travel</p>
+        </div>
+
+    </div>
+</section>
+
+    <!-- Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <button class="contact-btn" onclick="showContact()">Contact Us</button>
+    </div>
+
+    
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/7341182246?text=Hello%20I%20want%20to%20book%20a%20vehicle"
+       class="whatsapp-float"
+       target="_blank">
+
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+           alt="WhatsApp"
+           class="whatsapp-icon">
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Dattaguru Tours & Travel | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
